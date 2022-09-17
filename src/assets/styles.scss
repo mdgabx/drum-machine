@@ -18,8 +18,7 @@ body {
 }
 
 #drum-machine {
-    height: 100%;
-    width: 700px;  
+    height: 100%; 
     background-color: #fff;
     padding: 20px 0px;
     border-radius: 20px;
@@ -41,7 +40,6 @@ h1 {
     align-items: stretch;
     justify-content: center;
     flex-direction: column;
-    padding: 0 2em 0 2em;
 }
 
 .grid-con {
@@ -61,7 +59,7 @@ h1 {
 
 #display {
     padding: 15px;
-    width: 40%;
+    width: 60%;
     margin: auto;
     border: 1px solid #111;
     text-transform: uppercase;
@@ -76,3 +74,11 @@ h1 {
     border: none;
 }
 
+@media only screen and (max-width: 400px) {
+    .grid-con {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 0.7em;
+    }
+}
