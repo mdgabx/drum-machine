@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+
+html, body {
+    height: 100%;
+}
+
+$mud-color: #2a2b2a;
+$forest-color: #9cebb3;
+$font: "Poppins", sans-serif;
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(200deg, $mud-color, $forest-color);
+    font-family: $font;
+}
+
+#drum-machine {
+    height: 100%;
+    width: 700px;  
+    background-color: #fff;
+    padding: 20px 0px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px #111;
+}
+
+
+h1 {
+    margin-bottom: 1em;
+}
+
+.grid-con {
+    padding: 1.2em;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2em 0 2em;
+}
+
+.grid-con {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0.7em;
+}
+
+.drum-pad {
+    width: 100%;
+    padding: 15px 40px;
+    border: 1px solid #111;
+    font-weight: 900;
+    border-radius: 15px;
+}
+
+#display {
+    padding: 15px;
+    width: 40%;
+    margin: auto;
+    border: 1px solid #111;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 24px;
+    background: #85929E ;
+}
+
+.active {
+    background: #F4D03F;
+    transform: scale(1.1);
+    border: none;
+}
+
