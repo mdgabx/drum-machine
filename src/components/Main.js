@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import $, { Callbacks } from "jquery";
+import $ from "jquery";
 
 class Main extends Component {
     constructor(props) {
@@ -138,6 +138,9 @@ class Main extends Component {
 
                            
                     </div> 
+                </div>
+                <div className="text-center">
+                    <p>Get the code <a href="https://github.com/wdbsa/drum-machine" rel="nofollow noreferrer" target="_blank">here</a></p>
                 </div>
             </div>
         )
